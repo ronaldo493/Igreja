@@ -65,6 +65,7 @@ export const Forget = styled.p`
     cursor: pointer;
     color: #3498db;
     transition: color 0.3s;
+    
 
     &:hover {
         color: #076dda;
