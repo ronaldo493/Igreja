@@ -15,7 +15,7 @@ export const Button = styled.button`
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    border: none;
+    border: 1px solid #b4afaf;
     background-color: #dfdfdf;
 
     &:hover {
@@ -48,7 +48,7 @@ export const StyleContainer = styled.div`
 export const StyleForm = styled.form`
     width: 400px;
     background-color: #fff;
-    box-shadow: 0 4px 500px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
     text-align: center;

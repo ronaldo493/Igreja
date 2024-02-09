@@ -8,6 +8,8 @@ const LoginForm = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState ('');
 
+
+    // VALIDAÇÃO
     const handleLogin = (e) => {
         e.preventDefault();
 
@@ -16,10 +18,12 @@ const LoginForm = () => {
             return
         }
 
-        console.log('Username:', username);
-        console.log('Password:', password)
-
         setError ('');
+    }
+
+    // ESQUECEU A SENHA
+    const handleForgotPassword = () => {
+        console.log('Esqueceu sua senha?');
     }
 
     return (
@@ -38,6 +42,12 @@ const LoginForm = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+
+                {error && (
+                    <p onClick={handleForgotPassword} style={{ cursor: 'pointer', color: '#3498db' }}>
+                        Esqueceu sua senha?
+                    </p>
+                )}
 
                 <Button onClick={(e) => handleLogin(e)}>
                     PROSSEGUIR
