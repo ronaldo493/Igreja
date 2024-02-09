@@ -66,9 +66,9 @@ export const StyleForm = styled.form`
     max-width: 300px;
     height: 35vh;
     background-color: #fff;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 7%;
+    box-shadow: 0 10px 100px rgba(0, 0, 1, 0.1);
+    border-radius: 30px;
+    padding: 9%;
     text-align: center;
 
 // ANIMAÇÃO
