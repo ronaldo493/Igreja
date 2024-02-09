@@ -27,6 +27,7 @@ export const Button = styled.button`
 export const StyleInput = styled.div`
     width: 98%;
     padding: 10px 0;
+    position: relative;
 `;
 
 export const Input = styled.input`
@@ -70,4 +71,3 @@ export const Forget = styled.p`
         color: #076dda;
     }
 `;
-

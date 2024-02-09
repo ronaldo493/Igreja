@@ -37,10 +37,10 @@ const LoginForm = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-
+                
                 
                 <Forget>
-                    Esqueceu sua senha?    
+                    Esqueceu sua senha? 
                 </Forget>
                 
 
