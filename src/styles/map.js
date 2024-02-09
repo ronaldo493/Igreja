@@ -11,7 +11,7 @@ const InputButtonBase = `
 // BUTTON
 export const Button = styled.button`
     ${InputButtonBase};
-    margin-top: 45px;
+    margin-top: 35px;
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -58,5 +58,15 @@ export const Error = styled.p`
     color: red;
     font-weight: bold;
     margin-top: 35px;
+`;
+
+export const Forget = styled.p`
+    cursor: pointer;
+    color: #3498db;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #076dda;
+    }
 `;
 

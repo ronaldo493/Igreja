@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import InputField from "./InputField";
-import { StyleContainer, StyleForm, Error } from '../styles/map'; 
+import { StyleContainer, StyleForm, Error, Forget } from '../styles/map'; 
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -21,11 +21,6 @@ const LoginForm = () => {
         setError ('');
     }
 
-    // ESQUECEU A SENHA
-    const handleForgotPassword = () => {
-        console.log('Esqueceu sua senha?');
-    }
-
     return (
         <StyleContainer>
             <StyleForm>
@@ -43,11 +38,11 @@ const LoginForm = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
 
-                {error && (
-                    <p onClick={handleForgotPassword} style={{ cursor: 'pointer', color: '#3498db' }}>
-                        Esqueceu sua senha?
-                    </p>
-                )}
+                
+                <Forget>
+                    Esqueceu sua senha?    
+                </Forget>
+                
 
                 <Button onClick={(e) => handleLogin(e)}>
                     PROSSEGUIR
