@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import InputField from "./InputField";
-import { StyleContainer, StyleForm, p } from '../styles/map'; 
+import { StyleContainer, StyleForm, Error } from '../styles/map'; 
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -43,7 +43,7 @@ const LoginForm = () => {
                     PROSSEGUIR
                 </Button>
 
-                {error && <p>{error}</p>}
+                {error && <Error>{error}</Error>}
             </StyleForm>
         </StyleContainer>
     )

@@ -54,3 +54,9 @@ export const StyleForm = styled.form`
     text-align: center;
 `;
 
+export const Error = styled.p`
+    color: red;
+    font-weight: bold;
+    margin-top: 35px;
+`;
+
