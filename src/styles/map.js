@@ -50,7 +50,7 @@ export const StyleForm = styled.form`
     width: 40%;
     max-width: 400px;
     height: 35vh;
-    background-color: #f5f5f5;
+    background-color: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 2%;
