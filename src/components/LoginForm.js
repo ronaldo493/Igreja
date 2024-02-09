@@ -30,7 +30,9 @@ const LoginForm = () => {
     return (
         <StyleContainer>
             <StyleForm animate={animateForm}>
+                LOGIN
                 <InputField
+
                     placeholder="Usuário"
                     type="text"
                     value={username}
