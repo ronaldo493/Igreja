@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 // ESTILOS COMUNS ENTRE BUTTON E INPUT
-const InputButton = styled.div`
+const InputButtonBase = `
     width: 100%;
     height: 45px;
+    
 `;
 
 // BUTTON
 export const Button = styled.button`
-    ${InputButton};
+    ${InputButtonBase};
     margin-top: 15px;
 `;
-
 
 // INPUT
 export const StyleInput = styled.div`
@@ -20,7 +20,7 @@ export const StyleInput = styled.div`
 `;
 
 export const Input = styled.input`
-    ${InputButton};
+    ${InputButtonBase};
     text-align: center;
 `;
 
