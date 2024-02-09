@@ -50,7 +50,7 @@ export const StyleForm = styled.form`
     width: 40%;
     max-width: 400px;
     height: 35vh;
-    background-color: #fff;
+    background-color: #f5f5f5;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 2%;
@@ -67,7 +67,6 @@ export const Forget = styled.p`
     cursor: pointer;
     color: #3498db;
     transition: color 0.3s;
-    
 
     &:hover {
         color: #076dda;
