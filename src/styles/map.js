@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 // ESTILOS COMUNS ENTRE BUTTON E INPUT
 const InputButtonBase = `
@@ -11,7 +11,7 @@ const InputButtonBase = `
 // BUTTON
 export const Button = styled.button`
     ${InputButtonBase};
-    margin-top: 7%;
+    margin-top: 10%;
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -27,7 +27,6 @@ export const Button = styled.button`
 export const StyleInput = styled.div`
     width: 98%;
     padding: 2% 0;
-    position: relative;
 `;
 
 export const Input = styled.input`
@@ -46,21 +45,44 @@ export const StyleContainer = styled.div`
     align-items: center;
 `;
 
+// ANIMAÇÃO
+const shake = keyframes`
+    0%, 100% 
+    {
+        transform: translateX(0);
+    }   
+    10%, 30%, 50%, 70%, 90% 
+    {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% 
+    {
+        transform: translateX(10px);
+    }
+`;
+
 export const StyleForm = styled.form`
-    width: 40%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 300px;
     height: 35vh;
     background-color: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 2%;
+    padding: 7%;
     text-align: center;
+
+// ANIMAÇÃO
+    ${({ animate }) => animate && css`
+        animation: ${shake} 0.5s ease-in-out;
+    `}
 `;
+
+
 
 export const Error = styled.p`
     color: red;
     font-weight: bold;
-    margin-top: 7%;
+    margin-top: 10%;
 `;
 
 export const Forget = styled.p`

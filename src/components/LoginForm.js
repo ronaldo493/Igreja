@@ -7,6 +7,7 @@ const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState ('');
+    const [animateForm, setAnimateForm] = useState ('');
 
 
     // VALIDAÇÃO
@@ -15,7 +16,12 @@ const LoginForm = () => {
 
         if (!username || !password) {
             setError('Preencha todos os campos!')
-            return
+        // ATIVA A ANIMAÇÃO
+            setAnimateForm(true)
+            // REINICIA O ESTADO
+            setTimeout(() => setAnimateForm(false), 500);
+
+            return;
         }
 
         setError ('');
@@ -23,7 +29,7 @@ const LoginForm = () => {
 
     return (
         <StyleContainer>
-            <StyleForm>
+            <StyleForm animate={animateForm}>
                 <InputField
                     placeholder="Usuário"
                     type="text"
