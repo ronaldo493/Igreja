@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import InputField from "./InputField";
-import { StyleContainer, StyleForm } from '../styles/map'; 
+import { StyleContainer, StyleForm, p } from '../styles/map'; 
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -12,7 +12,7 @@ const LoginForm = () => {
         e.preventDefault();
 
         if (!username || !password) {
-            setError('Preencha todos os campos.')
+            setError('Preencha todos os campos!')
             return
         }
 
@@ -40,7 +40,7 @@ const LoginForm = () => {
                 />
 
                 <Button onClick={(e) => handleLogin(e)}>
-                    Entrar
+                    PROSSEGUIR
                 </Button>
 
                 {error && <p>{error}</p>}
