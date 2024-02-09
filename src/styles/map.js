@@ -4,14 +4,14 @@ import styled from 'styled-components';
 const InputButtonBase = `
     width: 100%;
     height: 50px;
-    outline:none;
+    outline: none;
     font-size: 15px;
 `;
 
 // BUTTON
 export const Button = styled.button`
     ${InputButtonBase};
-    margin-top: 35px;
+    margin-top: 7%;
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -26,7 +26,8 @@ export const Button = styled.button`
 // INPUT
 export const StyleInput = styled.div`
     width: 98%;
-    padding: 10px 0;
+    padding: 2% 0;
+    position: relative;
 `;
 
 export const Input = styled.input`
@@ -39,26 +40,27 @@ export const Input = styled.input`
 export const StyleContainer = styled.div`
     width: 100%;
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 `;
 
 export const StyleForm = styled.form`
-    width: 400px;
-    height: 350px;
+    width: 40%;
+    max-width: 400px;
+    height: 35vh;
     background-color: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
 `;
 
 export const Error = styled.p`
     color: red;
     font-weight: bold;
-    margin-top: 35px;
+    margin-top: 7%;
 `;
 
 export const Forget = styled.p`
@@ -71,4 +73,3 @@ export const Forget = styled.p`
         color: #076dda;
     }
 `;
-
