@@ -47,6 +47,7 @@ export const StyleContainer = styled.div`
 
 export const StyleForm = styled.form`
     width: 400px;
+    height: 350px;
     background-color: #fff;
     box-shadow: 0 2px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
