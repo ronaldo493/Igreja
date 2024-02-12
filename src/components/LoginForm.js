@@ -21,12 +21,12 @@ const LoginForm = () => {
             setAnimateForm(true)
             // REINICIA O ESTADO E LIMPA OS CAMPOS
             setTimeout(() => setAnimateForm(false), 500);
-            setUsername ('');
-            setPassword ('');
 
             return;
         }
 
+        setUsername ('');
+        setPassword ('');
         setError ('');
     }
 

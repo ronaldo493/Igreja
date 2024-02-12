@@ -6,6 +6,13 @@ const InputButtonBase = `
     height: 50px;
     outline: none;
     font-size: 15px;
+    border: 1px solid #D1D5DB;
+    transition: 0.1s;
+
+    &:hover{
+        border: 1px solid #6366F1;
+        border-radius: 10px;
+    }
 `;
 
 // BUTTON
@@ -15,11 +22,12 @@ export const Button = styled.button`
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #b4afaf;
-    background-color: #dfdfdf;
+    font-weight: bold;
+    background-color: #797CF3;
+    color: #FFF;
 
     &:hover {
-        background-color: #b4afaf;
+        background-color: #6366F1;
     }
 `;
 
@@ -90,11 +98,10 @@ export const LogLinks = styled.div`
     display: flex;
     justify-content: space-between;
     color: #3498db;
-    margin-top: 6px;
+    margin-top: 10px;
 `;
 
 export const Forget = styled.div`
     font-size: 12px;
-    text-decoration: none;
 `;
 
