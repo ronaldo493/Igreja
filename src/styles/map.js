@@ -78,7 +78,7 @@ export const StyleForm = styled.form`
     border-radius: 30px;
     padding: 5%;
     text-align: center;
-}
+
 
 // ANIMAÇÃO
     ${({ animate }) => animate && css`
