@@ -11,7 +11,7 @@ const InputButtonBase = `
 // BUTTON
 export const Button = styled.button`
     ${InputButtonBase};
-    margin-top: 10%;
+    margin-top: 15%;
     transition: 0.2s;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -68,7 +68,7 @@ export const StyleForm = styled.form`
     background-color: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 1, 0.1);
     border-radius: 30px;
-    padding: 9%;
+    padding: 5%;
     text-align: center;
 
 // ANIMAÇÃO
@@ -77,20 +77,24 @@ export const StyleForm = styled.form`
     `}
 `;
 
-
-
+//PREENCHER TODOS OS CAMPOS
 export const Error = styled.p`
     color: red;
     font-weight: bold;
     margin-top: 10%;
 `;
 
-export const Forget = styled.p`
-    cursor: pointer;
+//LINKS
+export const LogLinks = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     color: #3498db;
-    transition: color 0.3s;
-
-    &:hover {
-        color: #076dda;
-    }
+    margin-top: 6px;
 `;
+
+export const Forget = styled.div`
+    font-size: 12px;
+    text-decoration: none;
+`;
+

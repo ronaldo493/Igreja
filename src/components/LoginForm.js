@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import InputField from "./InputField";
-import { StyleContainer, StyleForm, Error, Forget } from '../styles/map'; 
+import Links from "./Links";
+import { StyleContainer, StyleForm, Error } from '../styles/map'; 
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -18,8 +19,10 @@ const LoginForm = () => {
             setError('Preencha todos os campos!')
         // ATIVA A ANIMAÇÃO
             setAnimateForm(true)
-            // REINICIA O ESTADO
+            // REINICIA O ESTADO E LIMPA OS CAMPOS
             setTimeout(() => setAnimateForm(false), 500);
+            setUsername ('');
+            setPassword ('');
 
             return;
         }
@@ -30,9 +33,7 @@ const LoginForm = () => {
     return (
         <StyleContainer>
             <StyleForm animate={animateForm}>
-                LOGIN
                 <InputField
-
                     placeholder="Usuário"
                     type="text"
                     value={username}
@@ -45,15 +46,11 @@ const LoginForm = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                
-                
-                <Forget>
-                    Esqueceu sua senha? 
-                </Forget>
-                
+
+                <Links />        
 
                 <Button onClick={(e) => handleLogin(e)}>
-                    PROSSEGUIR
+                    LOGIN
                 </Button>
 
                 {error && <Error>{error}</Error>}
