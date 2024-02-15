@@ -3,7 +3,7 @@ import styled, { keyframes, css } from 'styled-components';
 // ESTILOS COMUNS ENTRE BUTTON E INPUT
 const InputButtonBase = `
     width: 100%;
-    height: 50px;
+    height: 55px;
     outline: none;
     font-size: 15px;
     border: 1px solid #D1D5DB;
