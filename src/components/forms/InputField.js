@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleInput, Input } from '../styles/map'; 
+import { StyleInput, Input } from '../../styles/map'; 
 
 const InputField = ({label, type, placeholder, value, onChange }) => {
     return (

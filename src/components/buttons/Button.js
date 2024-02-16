@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button as StyledButton } from '../styles/map'; 
+import { Button as StyledButton } from '../../styles/map'; 
 
 const Button = ({ onClick, children }) => {
   return (

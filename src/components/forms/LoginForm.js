@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "../buttons/Button";
 import InputField from "./InputField";
-import Links from "./Links";
-import { StyleContainer, StyleForm, Error } from '../styles/map'; 
+import Links from "../links/Links";
+import { StyleContainer, StyleForm, Error } from '../../styles/map'; 
 
 const LoginForm = () => {
 
@@ -25,10 +25,10 @@ const LoginForm = () => {
 
             return;
         }
-
         setUsername ('');
         setPassword ('');
         setError ('');
+            
     }
 
     return (

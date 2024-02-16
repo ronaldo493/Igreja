@@ -1,6 +1,6 @@
 import React from "react";
-import { LogLinks } from '../styles/map';
-import { Forget } from '../styles/map';
+import { LogLinks } from '../../styles/map';
+import { Forget } from '../../styles/map';
 
 
 const Links = () => {
