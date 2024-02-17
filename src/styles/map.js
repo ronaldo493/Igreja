@@ -72,7 +72,7 @@ const shake = keyframes`
 export const StyleForm = styled.form`
     width: 100%;
     max-width: 300px;
-    height: 35vh;
+    height: 40vh;
     background-color: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 1, 0.1);
     border-radius: 30px;
